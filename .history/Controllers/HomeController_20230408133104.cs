@@ -7,9 +7,9 @@ namespace mpesaIntegration.Controllers;
 public class HomeController : Controller
 {
   private readonly ILogger<HomeController> _logger;
-  private readonly IHttpClientFactory _clientFactory:
+  private readonly IHttpClientFactory _clientFactory;
 
-    public HomeController(ILogger<HomeController> logger, IHttpClientFactory clientFactory)
+  public HomeController(ILogger<HomeController> logger, IHttpClientFactory clientFactory)
   {
     _logger = logger;
     _clientFactory = clientFactory;
